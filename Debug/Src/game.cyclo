@@ -1,0 +1,3 @@
+../Src/game.c:18:6:Game_Init	1
+../Src/game.c:23:12:random_delay	1
+../Src/game.c:28:6:Game_Run	6
