@@ -96,7 +96,7 @@ Reflex_Game_STM32/
 
 ---
 
-# 🏗 Software Architecture
+#  Software Architecture
 
 The project is organized into separate modules to keep the code clean, reusable, and easy to understand.
 
