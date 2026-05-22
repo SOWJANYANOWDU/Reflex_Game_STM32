@@ -59,7 +59,7 @@ Reaction Time: 213 ms
 Excellent!
 
 Get Ready...
-
+```
 ---
 
 #  Hardware Used
