@@ -1,15 +1,14 @@
 # ⚡ Reflex Game — STM32 Reaction Timer
 
 A **reaction timer game** developed on the **STM32 Nucleo-F446RE** board using **register-level programming** in Embedded C.
+## Why I Built This
 
-This project measures **human reaction time in milliseconds** using the onboard LED, push button, UART communication, hardware timer, and interrupt system of the STM32 microcontroller.
-
-Unlike beginner STM32 projects that rely on HAL libraries or CubeMX-generated peripheral configuration, this implementation uses **direct register programming**, providing a deeper understanding of embedded systems and microcontroller architecture.
-
-> No HAL. No RTOS. No middleware.  
-> Just registers, interrupts, timers, and embedded logic.
+I wanted to build something interactive using only the STM32 board without extra hardware. Instead of doing another LED blinking project, I tried creating a simple reaction timer game to practice timers, UART, and interrupts using register-level programming.
 
 ---
+This project measures **human reaction time in milliseconds** using the onboard LED, push button, UART communication, hardware timer, and interrupt system of the STM32 microcontroller.
+This project uses direct register-level programming instead of HAL libraries to better understand how STM32 peripherals work internally.
+
 
 #  Objective
 
@@ -33,7 +32,7 @@ The STM32 board interacts with the user through a **serial terminal** and the on
 
 ### Step-by-step flow
 
-1. Open a serial terminal (**Docklight / PuTTY**) at **115200 baud**
+1. Open a serial terminal (**Docklight**) at **115200 baud**
 2. User presses **ENTER** to begin a game round
 3. STM32 waits for a random duration
 4. LED suddenly turns ON and `"GO!"` appears
@@ -69,7 +68,7 @@ Get Ready...
 | Board | STM32 Nucleo-F446RE |
 | LED | Onboard LED  |
 | Button | User Button  |
-| UART | USART2 ) |
+| UART | USART2  |
 | Terminal | Docklight |
 
 ---
