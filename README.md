@@ -195,7 +195,7 @@ Responsibilities:
 - Detect button press
 - Trigger reaction event
 
----
+
 
 > Just One Board. Endless learning.  
 > No need to wait for a full embedded setup to build something.
