@@ -1,13 +1,14 @@
-# ⚡ Reflex Game — STM32 Reaction Timer
+#  Reflex Game — STM32 Reaction Timer
 
 A **reaction timer game** developed on the **STM32 Nucleo-F446RE** board using **register-level programming** in Embedded C.
+
 ## Why I Built This
 
 I wanted to build something interactive using only the STM32 board without extra hardware. Instead of doing another LED blinking project, I tried creating a simple reaction timer game to practice timers, UART, and interrupts using register-level programming.
-This project measures **human reaction time in milliseconds** using the onboard LED, push button, UART communication, hardware timer, and interrupt system of the STM32 microcontroller.
-This project uses direct register-level programming instead of HAL libraries to better understand how STM32 peripherals work internally.
 
----
+This project measures **human reaction time in milliseconds** using the onboard LED, push button, UART communication, hardware timer, and interrupt system of the STM32 microcontroller.
+
+This project uses **direct register-level programming** instead of HAL libraries to better understand how STM32 peripherals work internally.
 
 #  Objective
 
