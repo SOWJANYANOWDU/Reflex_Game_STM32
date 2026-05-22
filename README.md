@@ -53,12 +53,9 @@ STM32 REFLEX GAME
 Press ENTER to Start
 
 Get Ready...
-Wait...
-Wait...
-
 GO!
 
 Reaction Time: 213 ms
-Excellent Reflexes!
+Excellent!
 
-Press ENTER to play again
+Get Ready...
