@@ -1,29 +1,64 @@
-#  Reflex Game — STM32 Reaction Timer
+# ⚡ Reflex Game — STM32 Reaction Timer
 
-A **reaction timer game** built on the **STM32 Nucleo-F446RE** board using **register-level programming** in Embedded C.
+A **reaction timer game** developed on the **STM32 Nucleo-F446RE** board using **register-level programming** in Embedded C.
 
-No HAL. No CubeMX peripherals. No RTOS.  
-Just direct register access and embedded fundamentals.
+This project measures **human reaction time in milliseconds** using the onboard LED, push button, UART communication, hardware timer, and interrupt system of the STM32 microcontroller.
 
-> One board. One cable. One PC. Real embedded learning.
+Unlike beginner STM32 projects that rely on HAL libraries or CubeMX-generated peripheral configuration, this implementation uses **direct register programming**, providing a deeper understanding of embedded systems and microcontroller architecture.
+
+> No HAL. No RTOS. No middleware.  
+> Just registers, interrupts, timers, and embedded logic.
 
 ---
 
-## 🚀 Features
+#  Objective
 
-- **USART2 serial communication** (115200 baud)
-- **TIM2 1 ms timer tick**
-- **External interrupt (EXTI)** for button press detection
-- **Reaction time measurement in milliseconds**
-- **Performance scoring system**
+The main objective of this project is to build an **interactive reaction timer game** while learning core embedded system concepts such as:
+
+- Register-level peripheral programming
+- GPIO configuration
+- UART serial communication
+- Hardware timers
+- Interrupt handling (EXTI + NVIC)
+- Real-time event measurement
 - Modular embedded software structure
 
+This project transforms a simple STM32 development board into a **playable reaction speed tester**.
+
 ---
 
-## 🎮 How It Works
+#  How the Game Works
 
-1. Connect the STM32 board to your PC
-2. Open **Docklight**
-3. Select the STM32 **Virtual COM Port**
-4. Set baud rate to:115200
+The STM32 board interacts with the user through a **serial terminal** and the onboard hardware.
 
+### Step-by-step flow
+
+1. Open a serial terminal (**Docklight / PuTTY**) at **115200 baud**
+2. User presses **ENTER** to begin a game round
+3. STM32 waits for a random duration
+4. LED suddenly turns ON and `"GO!"` appears
+5. User presses the onboard button as quickly as possible
+6. STM32 calculates reaction time
+7. Time is displayed on serial terminal
+
+---
+
+## Example Gameplay
+
+```text
+===================================
+STM32 REFLEX GAME
+===================================
+
+Press ENTER to Start
+
+Get Ready...
+Wait...
+Wait...
+
+GO!
+
+Reaction Time: 213 ms
+Excellent Reflexes!
+
+Press ENTER to play again
