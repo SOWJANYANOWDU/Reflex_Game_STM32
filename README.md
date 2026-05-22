@@ -25,7 +25,5 @@ Just direct register access and embedded fundamentals.
 1. Connect the STM32 board to your PC
 2. Open **Docklight**
 3. Select the STM32 **Virtual COM Port**
-4. Set baud rate to:
+4. Set baud rate to:115200
 
-```text
-115200
