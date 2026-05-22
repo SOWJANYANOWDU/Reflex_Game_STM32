@@ -94,7 +94,4 @@ Reflex_Game_STM32/
 
 ---
 
-## Author
 
-**SOWJANYANOWDU**  
-[GitHub](https://github.com/SOWJANYANOWDU)
