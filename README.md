@@ -60,7 +60,11 @@ Excellent!
 Get Ready...
 ```
 ---
+## Demo
 
+▶️ [Watch Demo Video](https://drive.google.com/file/d/19-luD7K-Zx_INm9KH40xN-6cn5kir_LK/view?usp=drivesdk)
+
+---
 #  Hardware Used
 
 | Component | Description |
